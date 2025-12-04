@@ -1,0 +1,419 @@
+/* [project]/Desktop/react-app/src/app/blog/blog.css [app-client] (css) */
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-header {
+  border-bottom: 2px solid #08572f;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  display: flex;
+}
+
+.blog-header h1 {
+  color: #08572f;
+  margin: 0;
+}
+
+.back-link {
+  color: #08572f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.blog-main {
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  display: grid;
+}
+
+@media (max-width: 768px) {
+  .blog-main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-section {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form-section h2 {
+  color: #08572f;
+  margin-top: 0;
+}
+
+.search-box {
+  gap: 10px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.search-input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+  padding: 10px;
+}
+
+.search-btn, .clear-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.search-btn {
+  color: #fff;
+  background: #08572f;
+}
+
+.clear-btn {
+  color: #fff;
+  background: #dc3545;
+}
+
+.post-form {
+  flex-direction: column;
+  gap: 15px;
+  display: flex;
+}
+
+.form-input, .form-textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: inherit;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.tags-input {
+  gap: 10px;
+  display: flex;
+}
+
+.tag-input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+  padding: 10px;
+}
+
+.add-tag-btn {
+  color: #fff;
+  cursor: pointer;
+  background: #4a6fa5;
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  font-size: 20px;
+}
+
+.selected-tags {
+  flex-wrap: wrap;
+  gap: 8px;
+  display: flex;
+}
+
+.tag {
+  color: #1976d2;
+  background: #e3f2fd;
+  border-radius: 15px;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  display: inline-flex;
+}
+
+.remove-tag {
+  color: #dc3545;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.submit-btn {
+  color: #fff;
+  cursor: pointer;
+  background: #08572f;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.submit-btn:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.posts-section h2 {
+  color: #08572f;
+  margin-top: 0;
+}
+
+.count {
+  color: #666;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.loading, .no-posts {
+  text-align: center;
+  color: #666;
+  padding: 40px;
+}
+
+.posts-list {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+}
+
+.post-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+.post-header {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.post-header h3 {
+  color: #08572f;
+  flex: 1;
+  margin: 0;
+}
+
+.like-btn {
+  color: #e63946;
+  cursor: pointer;
+  background: #ffeaea;
+  border: none;
+  border-radius: 20px;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  display: flex;
+}
+
+.like-btn:hover {
+  background: #ffd1d1;
+}
+
+.post-meta {
+  color: #666;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  display: flex;
+}
+
+.post-tags {
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.post-tag {
+  color: #08572f;
+  cursor: pointer;
+  background: #08572f1a;
+  border: 1px solid #08572f;
+  border-radius: 15px;
+  padding: 4px 10px;
+  font-size: 12px;
+  transition: all .2s;
+}
+
+.post-tag:hover {
+  color: #fff;
+  background: #08572f;
+}
+
+.post-content {
+  color: #333;
+  white-space: pre-wrap;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.user-info {
+  background: #08572f14;
+  border: 1px solid #08572f33;
+  border-radius: 25px;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  display: flex;
+}
+
+.user-status {
+  font-size: 1.2em;
+}
+
+.user-details {
+  flex-direction: column;
+  gap: 2px;
+  display: flex;
+}
+
+.user-name {
+  color: #08572f;
+  font-weight: 600;
+}
+
+.user-type {
+  color: #666;
+  font-size: .8em;
+}
+
+.user-actions {
+  gap: 8px;
+  display: flex;
+}
+
+.change-name-btn, .logout-btn {
+  color: #08572f;
+  cursor: pointer;
+  background: #08572f1a;
+  border: 1px solid #08572f4d;
+  border-radius: 15px;
+  padding: 6px 12px;
+  font-size: .8em;
+  transition: all .3s;
+}
+
+.change-name-btn:hover, .logout-btn:hover {
+  background: #08572f33;
+}
+
+.logout-btn {
+  color: #dc3545;
+  background: #dc35451a;
+  border-color: #dc35454d;
+}
+
+.logout-btn:hover {
+  background: #dc354533;
+}
+
+.user-info.loading {
+  text-align: center;
+  justify-content: center;
+  min-width: 200px;
+}
+
+.modal-overlay {
+  z-index: 1000;
+  background: #00000080;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  box-shadow: 0 5px 20px #0003;
+}
+
+.modal h3 {
+  color: #08572f;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.modal-buttons {
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.secondary-btn {
+  color: #fff;
+  cursor: pointer;
+  background: #6c757d;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  transition: background .3s;
+}
+
+.secondary-btn:hover {
+  background: #5a6268;
+}
+
+.cancel-btn {
+  color: #fff;
+  cursor: pointer;
+  background: #dc3545;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  transition: background .3s;
+}
+
+.cancel-btn:hover {
+  background: #c82333;
+}
+
+.header-right {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.submit-section {
+  border-top: 1px solid #eee;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  display: flex;
+}
+
+.post-as {
+  color: #08572f;
+  font-size: .9em;
+}
+
+.post-as strong {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=Desktop_react-app_src_app_blog_blog_f36e6b77.css.map*/

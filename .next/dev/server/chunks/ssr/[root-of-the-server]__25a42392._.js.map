@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/vlad/Desktop/react-app/src/app/blog/page.tsx"],"sourcesContent":["// app/blog/page.tsx\r\n// Этот компонент обслуживает маршрут /blog/posts\r\nexport default function BlogPosts() {\r\n    return <main className=\"main\">\r\n\r\n    </main>;\r\n}"],"names":[],"mappings":"AAAA,oBAAoB;AACpB,iDAAiD;;;;;;;AAClC,SAAS;IACpB,qBAAO,yQAAC;QAAK,WAAU;;;;;;AAG3B"}}]
+}
